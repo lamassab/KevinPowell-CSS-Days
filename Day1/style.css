@@ -1,0 +1,34 @@
+// // Kevin's version
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+}
+
+.parent {
+    background-color: #213E4B;
+    padding: 50px;
+}
+
+.child {
+    background-color: #2cc1dd;
+    height: 250px;
+}
+
+// MORI's version
+// body {
+// }
+
+// .parent {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     background-color: #213E4B;
+//     height: 300px;
+// }
+
+// .child {
+//     background-color: #2CC1DD;
+//     height: 250px;
+//     width: 95%;
+// }
