@@ -13,33 +13,55 @@ img {
     height: auto;
 }
 
-* { box-sizing: border-box; }
-
-body {
-}
-
 .hero {
     background: linear-gradient(to left, #84a6d5, #b5f9fe);
+    padding: 10vh 0;
+    
+    height: 100vh;
+}
+
+.grid {
+    display: flex;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .col {
     flex: 1;
-    width: 50%;
-    max-width: 950px;
+    padding: 0 1em;
 }
 
-.__title {
+.hero__title {
     color: var(--color-accent);
     text-transform: uppercase;
     font-size: 8vw;
     font-weight: 600;
+    line-height: 12vh;
+    margin-bottom: 2rem;
+}
+
+.hero__text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 .hero__btn {
+    display: inline-block;
     background-color: var(--color-accent);
     color: #fff;
-    padding: 1em ;
+    padding: 1em 3em;
 }
 
 .hero__image {
+	width: 300px;
+	height: 400px;
+	position: relative;
+	box-shadow: 0px 0px 60px 5px #423d3d;
+}
+
+.more-content {
+    background: url('https://unsplash.it/800/400');
+    background-size: cover;
+    height: 1000px;
 }
