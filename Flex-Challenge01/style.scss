@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700,900');
+
+$color-bold: #23424A;
+$color-accent: #38CFD9;
+$color-title: #87629A;
+$footer-bg: #136C72
+
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    height: 60vh;
+    padding: 7em 2em;
+    margin: 0 auto;
+}
+
+.hero {
+    background-color: $color-bold;
+    color: #fff;
+
+    &__title {
+        width: 60%;
+        font-size: 2.5rem;
+        font-weight: 900;
+        line-height: 1.2;
+        margin-bottom: .7em;
+    }
+    
+    &__text {
+        width: 60%;
+        font-size: 1.125rem;
+        line-height: 1.7;
+        margin-bottom: 5em;
+    }
+
+    &__btn {
+        color: $color-bold;
+        background-color: $color-accent;
+        font-size: 1.3125rem;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        padding: 1em 3em;
+        border-radius: 2em;
+    }
+
+    &__btn:hover, 
+    &__btn:focus {
+        opacity: .7;
+    }
+}
+
+.content {
+    padding: 6em;
+    text-align: center;
+
+    & p {
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+}
+
+.row {
+    display: flex;
+}
+
+.col h2 {
+    color: $color-title;
+    font-size: 2.3rem;
+}
+
+.footer, .footer h2 {
+    background-color: $footer-bg;
+    color: #fff;
+}
+
+.col + .col {
+    margin-left: 20px;
+}
